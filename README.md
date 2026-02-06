@@ -45,10 +45,23 @@ print(sorted_people)
 pip install packages from pypi.org 
 
 
-
-
-
 chapter 2: AI agent, chatbot, Agentic AI, and n8n
+
+AI agents are good to have these days, we will compare them to chatbots and also we will define Agentic AI.
+
+AI agent: a software layer that would do us some repetitive tasks and frequently (They won't need access level and won't need much thinking). 
+
+Agentic revolution: Cloud  -->  SaaS
+                    Mobile -->  App
+                    Agents --> Agentic Economy
+LLMs will be used in Agent AIs.
+
+There was chatgpt moment at 2022. Now is AI agent moment for us. They are all like personal agents for us. 
+There are different Agents: Customer Agents, Employee Agents, Creative Agents, Data Agents, Code Agents, Security Agents
+
+LLMs give rise to the Agentic economy.
+
+AI agents change 
 
 chapter 3: LLM and propmt engineering
 
