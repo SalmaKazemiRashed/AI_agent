@@ -111,6 +111,7 @@ AI agent will be our colleague or assistant, where it will
 4. do smart follow up and remind.
 
 
+The most updated LLMs now: 
 
 - GPT (OpenAI) general applications.
 - Gemini (Google) Better in research area and less biased good together with other google tools such as notebooKLM
