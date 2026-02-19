@@ -137,6 +137,14 @@ prompt engineer tasks:
 - technical and non-technical collaboration for better promp designing
 
 
+Good Prompt has:
+
+1. What (e.g., write, summarize, suggest,...)
+2. How (e.g., for who, official, friendly)
+3. Limits (e.g., in less than 100 words, ..)
+
+
+
 
 
 
