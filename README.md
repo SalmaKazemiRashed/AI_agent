@@ -143,7 +143,11 @@ Good Prompt has:
 2. How (e.g., for who, official, friendly)
 3. Limits (e.g., in less than 100 words, ..)
 
+We can use some tools to convert the voice to text in our own language and this could be the prompt.
+We can even ask the LLMs to give us a prompt.
+Also we can ask for the edits in an image and upload the image with the prompt to the LLMs.
 
+The course project for this chapter involved prompting an assistant by providing detailed information about the role, abilities, and preferred answer style. By modifying the details of the prompt, we were able to compare the outputs and explore how prompts can be shaped effectively, illustrating the principles of prompt engineering. The source files for this project are provided [here](src/Prompt_engineering_chapter/).
 
 
 
