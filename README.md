@@ -67,7 +67,7 @@ There are different Agents: Customer Agents, Employee Agents, Creative Agents, D
 
 LLMs give rise to the Agentic economy.
 
-#### agentic AI and AI agenst
+#### agentic AI and AI agent
 
 AI agents would do the repetitive tasks daily but for those who need human feedback or human intervention still no. 
 In agentic AI, agents do everything and find the task they should do. We are still far from that. but AI agents are great now at doing defined tasks such as checking, tagging emails...
@@ -85,25 +85,30 @@ In this course what we will learn mostly is n8n, because of  it is open source a
 The license of other two are apache 2.0 but for n8n is sustainbale use license. If we want to make a chatbot + LLM , defy or flowise would be better. But not to forget all three needs zero or less coding compared to tools such as langchain,.... Those give us more freedom btw.
 
 
-#### chapter 3: LLM and propmt engineering
+## chapter 3: LLM and propmt engineering
 
-LLMs: A neural network with millions of parameters 
+LLMs: A neural network with millions of parameters. 
+
 The more sentences the LLM saw, the better they predict the next token not based on reasoning, That is why we are far from agentic world.
 
 Token: each unit in the sentence where has to converted to a vector. Then based on the content the LLM saw and trained on, the words will be predicted with different probs.
 And this sequence will continue. LLM does not understand of generated words, but If it has the reasoning ability, then it would create agentic world.
 
-Challenges: 
+#### Challenges: 
 
 - Hallucination
 - Data dependency (garbage in, garbage out)
-- security 
-- confidentiality
+- Security 
+- Privacy
 
 
 What we want is to connect different tools and filesystems together and use LLMs(chatgpt) as the brain.
 Chatgpt has this ability now.
-AI agent will be our colleague or assistant, where it will learn pattern from data, generate new content, categorize data and tasks and smart follow up and remind.
+AI agent will be our colleague or assistant, where it will 
+1. learn pattern from data, 
+2. generate new content,
+3. categorize data and tasks and,
+4. do smart follow up and remind.
 
 
 
@@ -125,8 +130,8 @@ Prompt is very important, because the generated text is based on our prompt. The
 prompt engineer tasks:
 
 - Design smart prompts to get the best output from AI models
-- test and improve prpmpts for increasing quality
-- convert the customer need and app to a meaningful prompt
+- test and improve prompts for increasing quality
+- convert the customer need and applications to a meaningful prompt
 - prompt documentation and make a library out of best prompts
 - technical and non-technical collaboration for better promp designing
 
