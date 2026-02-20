@@ -150,12 +150,88 @@ Also we can ask for the edits in an image and upload the image with the prompt t
 The course project for this chapter involved prompting an assistant by providing detailed information about the role, abilities, and preferred answer style. By modifying the details of the prompt, we were able to compare the outputs and explore how prompts can be shaped effectively, illustrating the principles of prompt engineering. The source files for this project are provided [here](src/Prompt_engineering_chapter/).
 
 
+## chapter 4: API and applications
+
+Application programming Interface: API helps to different apps and softwares to talk to each other.
+
+Applications:
+
+- Receive data fro online services
+- Send data to online services
+- interface between backend (service) and frontend (application/customer)
+
+
+API design and Architecture
+
+‍‍```plaintext
+Example      | Desription                                         | API type |
+-----------------------------------------------------------------------------
+Instagram API| The most popular one, based on                     | REST API |
+Github API   | HTTP and JSON                                      |          |
+-----------------------------------------------------------------------------
+Facebook API | Receive exact data with a request                  | GraphQL  |
+-----------------------------------------------------------------------------
+Google cloud | Fast connection between services,                  | gRPC     |
+services     | HTTP/2                                             |          |
+-----------------------------------------------------------------------------
+Bank and     |  Older protocols such as XML with more strict      | SOAP API |
+insurance    |  standards                                         |          |
+-----------------------------------------------------------------------------
+```
+
+
+API connection protocol
+
+‍‍```plaintext
+Example      | Desription                                         | API type |
+-----------------------------------------------------------------------------
+Web services | HTTP/HTTPS                                         | HTTP API |
+-----------------------------------------------------------------------------
+chat apps    | Instant two way connection                         | WebSocket|
+Trading      |                                                    | API      |
+-----------------------------------------------------------------------------
+micro        | Fast and light connection between services,        | gRPC API |
+services     | HTTP/2                                             |          |
+-----------------------------------------------------------------------------
+smart sensors|  IOT and light connection                          | MQTT API |
+-----------------------------------------------------------------------------
+```
+Here we will use REST APIs.
+
+
+#### Why do AI agents need APIs?
+
+When building AI agents, we often use workflow automation tools like n8n to connect different services and automate tasks. For example, we may need to retrieve data from Google Sheets and send it to Telegram. To enable this communication between systems, we rely on APIs.
+
+APIs allow different applications to exchange data and trigger actions programmatically. Without APIs, tools like n8n would not be able to integrate external services into a workflow.
+
+For the intelligence layer, we use LLM APIs (such as OpenAI or similar providers). These models act as the brain of the system, processing prompts and generating responses. Since the models run on external infrastructure, we access them through their APIs using API keys.
+
+In summary:
+
+- APIs connect external services (Google Sheets, Telegram, databases, etc.)
+
+- Workflow tools like n8n orchestrate the process
+
+- LLM APIs provide the reasoning and decision-making capabilities for the AI agent
+
+#### API methods, GET and POST
+
+Rest API works on HTTP protocol. 
+
+
+![alt text](image.png)
+
+The main methods of HTTP are:
+
+- GET: Get new data(e.g.,  user list)
+- POST: Send new data (e.g., create new user)
+- PUT: fully update (e.g., update or change in a user's profile)
+- PATCH: partially update.
+- DELETE: remove data.
 
 
 
-
-
-chapter 4: API and applications
 
 chapter 5: Installation of n8n
 
