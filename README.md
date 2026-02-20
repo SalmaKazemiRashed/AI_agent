@@ -316,12 +316,12 @@ When we make an API call, we send a request and ask. INn webhook the response if
 
 |Feature                     | Webhook                             | API                                   |  
 | -------------------------- | ----------------------------------- |---------------------------------------|
-| direction                  | Notification from server            | request from us to Server GET/POST    |
+| Direction                  | Notification from server            | request from us to Server GET/POST    |
 | Model                      | Push                                | Pull                                  |
 | Speed                      | Real-time                           | Based on request frequency            |
 | Example                    | Receive notif when a new order comes| get the order list from online shops  |
 
-
+![alt text](static_img/image-5.png)
 
 ## chapter 5: Installation of n8n
 
