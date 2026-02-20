@@ -205,7 +205,7 @@ In summary:
 Rest API works on HTTP protocol. 
 
 
-![alt text](image.png)
+![alt text](static_img/image.png)
 
 The main methods of HTTP are:
 
@@ -229,7 +229,7 @@ print(response.get(url))
 ```
 in POST method we have data to add and send.
 
-![alt text](image-1.png)
+![alt text](static_img/image-1.png)
 
 [Here](src/API_chapter/api-get.py), we run a test case of connecting to the coingecko.com api to get bitcoin values.
 
@@ -249,7 +249,7 @@ API response status code categories:
 - 4xx - client Error
 - 5xx - Server Error
 
-![alt text](image-2.png)
+![alt text](static_img/image-2.png)
 
 All types of authorization:
 
@@ -258,7 +258,7 @@ All types of authorization:
 3. Bearer Token (JWT) : The most common way, use a signed token 
 4. OAuth 2.0 : Facebook
 
-![alt text](image-3.png)
+![alt text](static_img/image-3.png)
 
 #### cURL
 
@@ -300,7 +300,7 @@ To try API we can use:
 
 Online Taxi App:
 
-![alt text](image-4.png)
+![alt text](static_img/image-4.png)
 
 ## chapter 5: Installation of n8n
 
