@@ -161,9 +161,10 @@ Applications:
 - interface between backend (service) and frontend (application/customer)
 
 
-API design and Architecture
+##### API design and Architecture
 
 ‍‍```plaintext
+
 Example      | Desription                                         | API type |
 -----------------------------------------------------------------------------
 Instagram API| The most popular one, based on                     | REST API |
@@ -177,11 +178,11 @@ services     | HTTP/2                                             |          |
 Bank and     |  Older protocols such as XML with more strict      | SOAP API |
 insurance    |  standards                                         |          |
 -----------------------------------------------------------------------------
+‍‍```
 
-```
 
 
-API connection protocol
+##### API connection protocol
 
 ‍‍```plaintext
 Example      | Desription                                         | API type |
@@ -196,8 +197,8 @@ services     | HTTP/2                                             |          |
 -----------------------------------------------------------------------------
 smart sensors|  IOT and light connection                          | MQTT API |
 -----------------------------------------------------------------------------
-
 ```
+
 Here we will use REST APIs.
 
 
