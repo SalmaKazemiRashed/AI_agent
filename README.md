@@ -161,43 +161,25 @@ Applications:
 - interface between backend (service) and frontend (application/customer)
 
 
-##### API design and Architecture
+##### API Design and Architecture
 
-‍‍```plaintext
-
-Example      | Desription                                         | API type |
------------------------------------------------------------------------------
-Instagram API| The most popular one, based on                     | REST API |
-Github API   | HTTP and JSON                                      |          |
------------------------------------------------------------------------------
-Facebook API | Receive exact data with a request                  | GraphQL  |
------------------------------------------------------------------------------
-Google cloud | Fast connection between services,                  | gRPC     |
-services     | HTTP/2                                             |          |
------------------------------------------------------------------------------
-Bank and     |  Older protocols such as XML with more strict      | SOAP API |
-insurance    |  standards                                         |          |
------------------------------------------------------------------------------
-‍‍```
-
+| Example                   | Description                                      | API Type |
+| ------------------------- | ------------------------------------------------ | -------- |
+| Instagram API, GitHub API | Popular public APIs based on HTTP and JSON       | REST API |
+| Facebook API              | Retrieve exactly the data you request            | GraphQL  |
+| Google Cloud Services     | Fast communication between services using HTTP/2 | gRPC     |
+| Banking & Insurance APIs  | Older protocols using XML with strict standards  | SOAP API |
 
 
 ##### API connection protocol
 
-‍‍```plaintext
-Example      | Desription                                         | API type |
------------------------------------------------------------------------------
-Web services | HTTP/HTTPS                                         | HTTP API |
------------------------------------------------------------------------------
-chat apps    | Instant two way connection                         | WebSocket|
-Trading      |                                                    | API      |
------------------------------------------------------------------------------
-micro        | Fast and light connection between services,        | gRPC API |
-services     | HTTP/2                                             |          |
------------------------------------------------------------------------------
-smart sensors|  IOT and light connection                          | MQTT API |
------------------------------------------------------------------------------
-```
+| Example                    | Description                                                     | API Type      |
+| -------------------------- | --------------------------------------------------------------- | ------------- |
+| Web services               | Standard request–response over HTTP/HTTPS                       | HTTP API      |
+| Chat apps, Trading systems | Real-time, two-way communication                                | WebSocket API |
+| Microservices              | Fast, lightweight service-to-service communication using HTTP/2 | gRPC API      |
+| Smart sensors (IoT)        | Lightweight messaging for IoT devices                           | MQTT API      |
+
 
 Here we will use REST APIs.
 
