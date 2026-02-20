@@ -177,6 +177,7 @@ services     | HTTP/2                                             |          |
 Bank and     |  Older protocols such as XML with more strict      | SOAP API |
 insurance    |  standards                                         |          |
 -----------------------------------------------------------------------------
+
 ```
 
 
@@ -195,6 +196,7 @@ services     | HTTP/2                                             |          |
 -----------------------------------------------------------------------------
 smart sensors|  IOT and light connection                          | MQTT API |
 -----------------------------------------------------------------------------
+
 ```
 Here we will use REST APIs.
 
