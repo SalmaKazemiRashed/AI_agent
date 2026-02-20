@@ -231,9 +231,80 @@ in POST method we have data to add and send.
 
 ![alt text](image-1.png)
 
-chapter 5: Installation of n8n
+[Here](src/API_chapter/api-get.py), we run a test case of connecting to the coingecko.com api to get bitcoin values.
 
-chapter 6: RAG and VectorDB
+
+Now, we try [POST](src/API_chapter/api-post.py) method. use [jsonplaceholder](https://jsonplaceholder.typicode.com/)" url.
+
+We can see the get and post signals in the network tab (F12) in all websites that we browse. 
+
+
+#### API and authorization
+
+API response status code categories:
+
+- 1xx - informational
+- 2xx - Success 
+- 3xx - Redirection
+- 4xx - client Error
+- 5xx - Server Error
+
+![alt text](image-2.png)
+
+All types of authorization:
+
+1. API key in the header
+2. Basic Auth: username and password
+3. Bearer Token (JWT) : The most common way, use a signed token 
+4. OAuth 2.0 : Facebook
+
+![alt text](image-3.png)
+
+#### cURL
+
+Client URL is a command line tool for sending HTTP requests and other protocols (e.g., FTP)
+It exist on Windows, Mac, and Linux.
+For API test and scripting is very important.
+
+```plaintext
+curl -X GET https://api.example.com/servers
+```
+
+curl -X : command to make a API call from command line
+
+GET     : HTTP method used for the call
+
+https.. : URL or endpoint where the information is available
+
+```plaintext
+curl -X POST https://api.example.com/data -H "Authorization: Bearer YOUR_TOKEN" -d "{"sample":"data_body"}"
+```
+
+curl -X : command to make a API call from command line
+
+POST     : HTTP method used for the call
+
+https.. : URL or endpoint where we want to write the data
+
+Auth    : Header
+
+-d JSON : Data
+
+
+API testing software: Postman.
+
+To try API we can use:
+
+1. Python with requests package
+2. curl as a command line tool
+
+Online Taxi App:
+
+![alt text](image-4.png)
+
+## chapter 5: Installation of n8n
+
+## chapter 6: RAG and VectorDB
 
 chapter 7: projects
 
