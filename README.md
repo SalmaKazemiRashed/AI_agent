@@ -302,6 +302,27 @@ Online Taxi App:
 
 ![alt text](static_img/image-4.png)
 
+#### Webhook
+Webhook is a URL in our server that if an event happens, the other server will send a request to it. 
+Push: We wait to receive the message from server.
+
+Examples:
+
+Online payment: When the payment is successful, the payment server send a message to our webhook saying successful payment.
+
+GitHub: If someone creates a new issue, Github POST the issue to our webhook. 
+
+When we make an API call, we send a request and ask. INn webhook the response if not from our side. The server send us the message if some changes happen.
+
+|Feature                     | Webhook                             | API                                   |  
+| -------------------------- | ----------------------------------- |---------------------------------------|
+| direction                  | Notification from server            | request from us to Server GET/POST    |
+| Model                      | Push                                | Pull                                  |
+| Speed                      | Real-time                           | Based on request frequency            |
+| Example                    | Receive notif when a new order comes| get the order list from online shops  |
+
+
+
 ## chapter 5: Installation of n8n
 
 ## chapter 6: RAG and VectorDB
