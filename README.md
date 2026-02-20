@@ -209,14 +209,27 @@ Rest API works on HTTP protocol.
 
 The main methods of HTTP are:
 
-- GET: Get new data(e.g.,  user list)
+- GET: retrieve new data(e.g.,  user list) from a server, readonly. 
 - POST: Send new data (e.g., create new user)
-- PUT: fully update (e.g., update or change in a user's profile)
-- PATCH: partially update.
-- DELETE: remove data.
+- PUT: Fully update (e.g., update or change in a user's profile)
+- PATCH: Partially update.
+- DELETE: Remove data.
 
+Two ways to work with GET:
+```plaintext
+https://api.weatherapi.com/v1/current.json?key=API_KEY?q=Lund
+```
 
+or using python
+```Python
+import requests
 
+url = https:/apiweatherapi.com/v1/current.json.get()
+print(response.get(url))
+```
+in POST method we have data to add and send.
+
+![alt text](image-1.png)
 
 chapter 5: Installation of n8n
 
