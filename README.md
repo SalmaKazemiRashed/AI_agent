@@ -224,9 +224,26 @@ or using python
 ```Python
 import requests
 
-url = https:/apiweatherapi.com/v1/current.json.get()
-print(response.get(url))
+url = https:/api.weather.com/v1/current.json.get()
+print(requests.get(url))
 ```
+
+How to build a JSON URL (general rule):
+
+A JSON API URL usually has:
+```plaintext
+https://api.website.com/endpoint?param=value&param2=value
+```
+1. Find the API base URL
+
+2. Add parameters using ?
+
+3. Separate parameters with &
+
+4. Use response.json() in Python
+
+
+
 in POST method we have data to add and send.
 
 ![alt text](static_img/image-1.png)
@@ -320,6 +337,7 @@ When we make an API call, we send a request and ask. INn webhook the response if
 | Model                      | Push                                | Pull                                  |
 | Speed                      | Real-time                           | Based on request frequency            |
 | Example                    | Receive notif when a new order comes| get the order list from online shops  |
+
 
 ![alt text](static_img/image-5.png)
 
