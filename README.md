@@ -343,15 +343,10 @@ When we make an API call, we send a request and ask. INn webhook the response if
 
 #### AI APIs
 
-1. OpenAI
+### 1. OpenAI
 
-```bash
-pip install -q openai #-q is quiet
-
-```
-
-Create API key from openAI page and after activating billing and buy credits.
-
+Create API key from openAI page after activating billing and buy credits. save the key in e.g., .env file and load it with load_dotenv()
+example usage:
 ```python
 import os
 import requests
@@ -381,8 +376,79 @@ for chunk in stream:
 ```
 
 
+### 2. Cohere 
 
+is an AI company that builds large language models (LLMs) and tools for businesses to use artificial intelligence in real-world applications.
+```python
+import cohere
 
+co = cohere.ClientV2(api_key=" key") ## I copied my API_key from cohere account directly here
+
+res = co.chat(
+    model="command-r-plus-08-2024",
+    messages=[
+        {
+            "role": "user",
+            "content": "what is your suggestion for new Ai course",
+        }
+    ],
+)
+
+print(res.message.content[0].text)
+```
+### 3. Open-Router/Google Gemini
+
+```python
+client = OpenAI(
+  base_url="https://openrouter.ai/api/v1",
+  api_key="key from openrouter.ai ",
+)
+
+completion = client.chat.completions.create(
+  
+  model="google/gemma-3-12b-it:free",
+  messages=[
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Explain this picture to kids as a drawing teacher in 30 words."
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "image_url"
+          }
+        }
+      ]
+    }
+  ]
+)
+print(completion.choices[0].message.content)
+```
+
+### 4. API in gradio
+After creating API_key and the model we want we can define a gradio interface as following to have the model and input and output as a web app:
+```python
+def text_to_speach(text):
+    ....
+
+iface = gr.Interface(
+    fn=text_to_speech,
+    inputs=gr.Textbox(label="Enter Text"),
+    outputs=gr.Audio(label="Generated Speech"),
+    title="🗣️ AI-Powered Text-to-Speech (TTS)",
+    description="Enter any text and get an AI-generated voice output using AvalAI.",
+)
+# Launch the web app
+iface.launch()
+```
+![](static_img/Text_to_speech_gradio.png)
+
+![](static_img/Ai_caption_for_image.png)
+
+![](static_img/chatbot_gradio.png)
 
 
 ## chapter 5: Installation of n8n
