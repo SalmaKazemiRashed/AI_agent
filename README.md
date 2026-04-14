@@ -2,7 +2,8 @@
 This repo is the summary of AI agent course I took from [maktabkhooneh](https://maktabkhooneh.org/)
 
 ##### The final goal of AI_agent course is to make a personal AI_agent from scratch for doing personal tasks
-
+<details>
+<summary>📖 Chapter 1: Python </summary>
 ## chapter 1: Python
 
 In n8n we sometimes need to write a function node, This is written in Javascript, but we need to write it as a python node in order to e.g., read a csv file, analyse it with pandas, cleaning or normalizing it before sending to a LLM, or use a local pretrained_model. With Python we will have lots of customized features.
@@ -47,6 +48,9 @@ print(sorted_people)
 ```
 
 pip install packages from pypi.org 
+
+
+</details>
 
 
 ## chapter 2: AI agent, chatbot, Agentic AI, and n8n
