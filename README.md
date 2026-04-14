@@ -3,7 +3,7 @@ This repo is the summary of AI agent course I took from [maktabkhooneh](https://
 
 ##### The final goal of AI_agent course is to make a personal AI_agent from scratch for doing personal tasks
 <details>
-<summary>📖 Chapter 1: Python </summary>
+<summary>Chapter 1: Python </summary>
 
 
 In n8n we sometimes need to write a function node, This is written in Javascript, but we need to write it as a python node in order to e.g., read a csv file, analyse it with pandas, cleaning or normalizing it before sending to a LLM, or use a local pretrained_model. With Python we will have lots of customized features.
@@ -462,11 +462,25 @@ A Joke generator LLM-based chatbot:
 All code of API part is summarized [in](src/API_chapter/AI_API.ipynb)
 
 </details>
-## chapter 5: Installation of n8n
+<details>
+<summary>chapter 5: Installation of n8n</summary>
+</details>
 
-## chapter 6: RAG and VectorDB
+<details>
+  
+<summary>chapter 6: RAG and VectorDB</summary>
+</details>
 
-chapter 7: projects
+<details>
+<summary>chapter 7: projects</summary>
 
 
-chapter 8: MCP and applications
+</details>
+
+<details>
+
+<summary>chapter 8: MCP and applications</summary>
+  
+</details>
+
+
