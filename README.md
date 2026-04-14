@@ -53,10 +53,9 @@ pip install packages from pypi.org
 </details>
 
 <details>
-<summary>
-## chapter 2: AI agent, chatbot, Agentic AI, and n8n</summary>
+<summary>chapter 2: AI agent, chatbot, Agentic AI, and n8n</summary>
   
-**AI agents are good to have these days, we will compare them to chatbots and also we will define Agentic AI.
+AI agents are good to have these days, we will compare them to chatbots and also we will define Agentic AI.
 
 AI agent: a software layer that would do us some repetitive tasks and frequently (They won't need access level and won't need much thinking). 
 
@@ -87,10 +86,11 @@ The goal of this course is to have our own Ai agents after this for doing our ta
 #### n8n, Dify and Flowise AI
 In this course what we will learn mostly is n8n, because of  it is open source and we can use in our local machine (not cloud). All the environment of three tools are graphic "drag and drop" env. n8n is much simpler in connecting to different APIs such as telegram, slack, email,.... It also has larger community (check all three githubs).
 
-The license of other two are apache 2.0 but for n8n is sustainbale use license. If we want to make a chatbot + LLM , defy or flowise would be better. But not to forget all three needs zero or less coding compared to tools such as langchain,.... Those give us more freedom btw.**
-
+The license of other two are apache 2.0 but for n8n is sustainbale use license. If we want to make a chatbot + LLM , defy or flowise would be better. But not to forget all three needs zero or less coding compared to tools such as langchain,.... Those give us more freedom btw.
 </details>
-## chapter 3: LLM and propmt engineering
+
+<details>
+<summary>chapter 3: LLM and propmt engineering</summary>
 
 LLMs: A neural network with millions of parameters. 
 
@@ -154,9 +154,10 @@ Also we can ask for the edits in an image and upload the image with the prompt t
 
 The course project for this chapter involved prompting an assistant by providing detailed information about the role, abilities, and preferred answer style. By modifying the details of the prompt, we were able to compare the outputs and explore how prompts can be shaped effectively, illustrating the principles of prompt engineering. The source files for this project are provided [here](src/Prompt_engineering_chapter/).
 
-
-## chapter 4: API and applications
-
+</details>
+<details>
+<summary>chapter 4: API and applications
+</summary>
 Application programming Interface: API helps to different apps and softwares to talk to each other.
 
 Applications:
@@ -460,7 +461,7 @@ A Joke generator LLM-based chatbot:
 
 All code of API part is summarized [in](src/API_chapter/AI_API.ipynb)
 
-
+</details>
 ## chapter 5: Installation of n8n
 
 ## chapter 6: RAG and VectorDB
