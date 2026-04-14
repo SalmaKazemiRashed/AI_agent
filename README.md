@@ -189,9 +189,10 @@ Applications:
 
 Here we will use REST APIs.
 
-
-#### Why do AI agents need APIs?
-
+<details>
+<summary>Why do AI agents need APIs?
+</summary>
+  
 When building AI agents, we often use workflow automation tools like n8n to connect different services and automate tasks. For example, we may need to retrieve data from Google Sheets and send it to Telegram. To enable this communication between systems, we rely on APIs.
 
 APIs allow different applications to exchange data and trigger actions programmatically. Without APIs, tools like n8n would not be able to integrate external services into a workflow.
@@ -205,9 +206,10 @@ In summary:
 - Workflow tools like n8n orchestrate the process
 
 - LLM APIs provide the reasoning and decision-making capabilities for the AI agent
-
-#### API methods, GET and POST
-
+</details>
+<details>
+<summary>API methods, GET and POST
+</summary>
 Rest API works on HTTP protocol. 
 
 
@@ -262,8 +264,10 @@ Now, we try [POST](src/API_chapter/api-post.py) method. use [jsonplaceholder](ht
 We can see the get and post signals in the network tab (F12) in all websites that we browse. 
 
 
-#### API and authorization
-
+</details>
+<details>
+<summary> API and authorization
+</summary>
 API response status code categories:
 
 - 1xx - informational
@@ -283,7 +287,9 @@ All types of authorization:
 
 ![alt text](static_img/image-3.png)
 
-#### cURL
+ </details>
+<details>
+<summary>cURL</summary>
 
 Client URL is a command line tool for sending HTTP requests and other protocols (e.g., FTP)
 It exist on Windows, Mac, and Linux.
@@ -325,7 +331,9 @@ Online Taxi App:
 
 ![alt text](static_img/image-4.png)
 
-#### Webhook
+</details>
+<details>
+<summary> Webhook </summary>
 Webhook is a URL in our server that if an event happens, the other server will send a request to it. 
 Push: We wait to receive the message from server.
 
@@ -347,7 +355,9 @@ When we make an API call, we send a request and ask. INn webhook the response if
 
 ![alt text](static_img/image-5.png)
 
-#### AI APIs
+</details>
+<details>
+<summary> AI APIs</summary>
 
 ##### 1. OpenAI
 
@@ -460,6 +470,8 @@ A Joke generator LLM-based chatbot:
 ![](static_img/chatbot_gradio.png)
 
 All code of API part is summarized [in](src/API_chapter/AI_API.ipynb)
+
+</details>
 
 </details>
 <details>
