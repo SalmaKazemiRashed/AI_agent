@@ -341,6 +341,162 @@ When we make an API call, we send a request and ask. INn webhook the response if
 
 ![alt text](static_img/image-5.png)
 
+#### AI APIs
+
+1. OpenAI
+
+```bash
+pip install -q openai #-q is quiet
+
+```
+
+Create API key from openAI page and after activating billing and buy credits.
+
+```python
+import os
+import requests
+from dotenv import load_dotenv
+import base64
+
+# Load environment variables e.g., API_key
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
+
+
+from openai import OpenAI
+
+client = OpenAI(
+        api_key= API_KEY
+
+)
+
+stream = client.chat.completions.create(
+    messages= messages,
+    model="gpt-3.5-turbo",
+    stream=True,
+)
+for chunk in stream:
+    print(chunk.choices[0].delta.content or "", end="")
+```
+
+
+
+
+
+ارائه راهکار برای استفاده از APIهای هوش مصنوعی و معرفی Aval AI
+"15:20
+آشنایی با Base64 و نقش آن در ارسال داده از طریق API
+"10:16
+کوئیز: نحوه‌ی عملکرد رمزگذاری Base64
+"01:00
+کار با APIهای هوش مصنوعی برای پردازش صوت و تصویر
+"13:19
+کوئیز: مدل‌های هوش مصنوعی
+"03:00
+آشنایی با API شرکت Cohere و نحوه‌ی استفاده از آن
+"06:59
+آموزش استفاده از OpenRouter API
+"12:31
+کوئیز: OpenRouter API
+"01:00
+آشنایی با Gradio و ساخت اپلیکیشن تبدیل متن به صوت (TTS)
+"08:06
+کار با Gradio برای توصیف تصاویر با مدل‌های هوش مصنوعی
+"08:17
+ساخت یک چت‌بات با Gradio
+"08:00
+تمرین: ساخت اپلیکیشن تعاملی برای ارتباط با API هوش مصنوعی (الزامی)
+"300:00
+فصل پنجم: آشنایی و نصب n8n
+روش‌های نصب n8n و آشنایی با Docker
+"09:50
+استفاده از نسخه ابری n8n و ایجاد حساب در n8n.io
+"14:25
+نصب n8n به‌صورت محلی با استفاده از Docker Desktop
+"10:04
+نصب n8n بر روی VPS (بخش اول) — از دامنه تا سرور
+"16:45
+نصب n8n بر روی VPS (بخش دوم) — از دامنه تا سرور
+"13:06
+افزودن Google Credentials به n8n ویژه راهکار Self-Hosted
+"17:42
+افزودن Telegram Credentials به n8n و اتصال به ربات تلگرام
+"14:22
+آشنایی با انواع Node‌ها در n8n و کاربرد آن‌ها
+"08:22
+معرفی کلی Core Node‌ها در n8n
+"03:32
+آشنایی با Set Node (Edit Field) و کاربرد آن در n8n
+"10:43
+کوئیز: نقش Set Node
+"01:00
+آشنایی با Aggregate Node و کاربرد آن در n8n
+"09:00
+آشنایی با Nodeهای Merge و Split در n8n
+"07:41
+آشنایی با IF و Switch Node در n8n
+"15:21
+آشنایی با Code Node و کاربرد آن در n8n
+"09:16
+کوئیز: نقش Code Node
+"01:00
+آشنایی با Nodeهای Wait، Sort و Limit در n8n
+"05:01
+آشنایی با Google Nodes در n8n (Sheets، Drive، Gmail و دیگر سرویس‌ها)
+"07:44
+آشنایی با AI Agent Node در n8n
+"16:53
+کوئیز: کاربرد AI Agent Node
+"01:00
+نصب، راه‌اندازی و تست پلتفرم Dify
+"24:01
+تمرین: ارسال پیام خودکار به تلگرام با n8n 📲🤖 (الزامی)
+"300:00
+فصل ششم: RAG و VectorDB
+آشنایی با RAG
+"13:23
+کوئیز: نحوه‌ی عملکرد RAG
+"01:00
+آشنایی با Embeddingها
+"15:05
+کوئیز: مفهوم Embedding
+"01:00
+آشنایی با Vector Database
+"09:36
+کوئیز: مفهوم Vector Database
+"01:00
+فصل هفتم: Vibe Coding و پروژه‌های عملی
+آشنایی با مفهوم Vibe Coding و نقش آن در هوش مصنوعی مدرن
+"16:26
+پروژه 1 - اتوماسیون خلاصه‌سازی و ارسال ایمیل سفارش‌ها با n8n و Google Sheets
+"12:51
+پروژه 2 - دستیار تقویم هوشمند با n8n، Telegram و Google Calendar
+"18:57
+پروژه 3 - تولید خودکار تصویر تبلیغاتی از ترکیب محصول و مدل با n8n + OpenRouter
+"15:23
+پروژه 4 - دستیار تحلیلگر داده با اتصال به Google Sheets و تولید گزارش خودکار ایمیلی
+"18:06
+پروژه 5 - RAG : آپلود دانش، ایندکس‌گذاری و پاسخ‌گویی تعاملی با n8n
+"13:43
+تمرین: سامانه پرسش‌وپاسخ دانش‌بنیان FAQ ❓🤖 (الزامی)
+"300:00
+پروژه 6 - دستیار جستجوی هوشمند شرکت‌ها با جستجو در وب و پاسخ صوتی (Tavily + OpenAI + Telegram)
+"14:29
+پروژه 7 - منشی هوشمند روزانه با Google Calendar و Telegram
+"06:36
+پروژه 8 - وب‌کراولر تخفیف‌های جدید فروشگاه (Browserless + n8n + Google Sheets)
+"09:21
+پروژه 9 - خبرنامه هوشمند مالی: تجمیع اخبار از چند منبع و خلاصه‌سازی خودکار در تلگرام
+"06:13
+پروژه نهایی: ساخت یک AI Agent با n8n (الزامی)
+"600:00
+فصل هشتم: MCP چیست و چه کاربردی دارد؟
+آشنایی با MCP و کاربرد آن در ارتباط بین Agentها و ابزارها
+"13:09
+کوئیز: نقش MCP
+"01:00
+
 ## chapter 5: Installation of n8n
 
 ## chapter 6: RAG and VectorDB
