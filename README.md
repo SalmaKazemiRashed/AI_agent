@@ -343,7 +343,7 @@ When we make an API call, we send a request and ask. INn webhook the response if
 
 #### AI APIs
 
-### 1. OpenAI
+#### 1. OpenAI
 
 Create API key from openAI page after activating billing and buy credits. save the key in e.g., .env file and load it with load_dotenv()
 example usage:
@@ -376,7 +376,7 @@ for chunk in stream:
 ```
 
 
-### 2. Cohere 
+#### 2. Cohere 
 
 is an AI company that builds large language models (LLMs) and tools for businesses to use artificial intelligence in real-world applications.
 ```python
@@ -396,7 +396,7 @@ res = co.chat(
 
 print(res.message.content[0].text)
 ```
-### 3. Open-Router/Google Gemini
+#### 3. Open-Router/Google Gemini
 
 ```python
 client = OpenAI(
@@ -428,7 +428,7 @@ completion = client.chat.completions.create(
 print(completion.choices[0].message.content)
 ```
 
-### 4. API in gradio
+#### 4. API in gradio
 After creating API_key and the model we want we can define a gradio interface as following to have the model and input and output as a web app:
 ```python
 def text_to_speach(text):
