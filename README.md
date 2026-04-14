@@ -4,7 +4,7 @@ This repo is the summary of AI agent course I took from [maktabkhooneh](https://
 ##### The final goal of AI_agent course is to make a personal AI_agent from scratch for doing personal tasks
 <details>
 <summary>📖 Chapter 1: Python </summary>
-## chapter 1: Python
+
 
 In n8n we sometimes need to write a function node, This is written in Javascript, but we need to write it as a python node in order to e.g., read a csv file, analyse it with pandas, cleaning or normalizing it before sending to a LLM, or use a local pretrained_model. With Python we will have lots of customized features.
 N8n is for automated running of Agents, however, developing and testing Agent itself is always conducted in Jupyter notebooks or colab.
@@ -52,10 +52,11 @@ pip install packages from pypi.org
 
 </details>
 
-
-## chapter 2: AI agent, chatbot, Agentic AI, and n8n
-
-AI agents are good to have these days, we will compare them to chatbots and also we will define Agentic AI.
+<details>
+<summary>
+## chapter 2: AI agent, chatbot, Agentic AI, and n8n</summary>
+  
+**AI agents are good to have these days, we will compare them to chatbots and also we will define Agentic AI.
 
 AI agent: a software layer that would do us some repetitive tasks and frequently (They won't need access level and won't need much thinking). 
 
@@ -86,9 +87,9 @@ The goal of this course is to have our own Ai agents after this for doing our ta
 #### n8n, Dify and Flowise AI
 In this course what we will learn mostly is n8n, because of  it is open source and we can use in our local machine (not cloud). All the environment of three tools are graphic "drag and drop" env. n8n is much simpler in connecting to different APIs such as telegram, slack, email,.... It also has larger community (check all three githubs).
 
-The license of other two are apache 2.0 but for n8n is sustainbale use license. If we want to make a chatbot + LLM , defy or flowise would be better. But not to forget all three needs zero or less coding compared to tools such as langchain,.... Those give us more freedom btw.
+The license of other two are apache 2.0 but for n8n is sustainbale use license. If we want to make a chatbot + LLM , defy or flowise would be better. But not to forget all three needs zero or less coding compared to tools such as langchain,.... Those give us more freedom btw.**
 
-
+</details>
 ## chapter 3: LLM and propmt engineering
 
 LLMs: A neural network with millions of parameters. 
